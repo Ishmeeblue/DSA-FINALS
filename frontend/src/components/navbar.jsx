@@ -6,7 +6,7 @@ import { Link,NavLink } from 'react-router-dom';
 import { ShopContext } from '../context/shopcontext';
 
 
-const Navbar = () => {
+const navbar = () => {
 
 const {getCartCount} = useContext(ShopContext);
 
@@ -51,4 +51,4 @@ const {getCartCount} = useContext(ShopContext);
   )
 }
 
-export default Navbar
+export default navbar
