@@ -11,6 +11,8 @@ const ShopContextProvider = (props) => {
     const deliveryfee = 50;
     const [cartItems,setCartItems] = useState({});
     const navigate = useNavigate();
+    const [token,setToken] = useState('');
+    const backendUrl = import.meta.env.VITE_BACKEND_URL + '/';
 
     const addToCart = async (itemId, shades) => {
     if (!shades) {
@@ -74,7 +76,8 @@ const value = {
     products, currency, deliveryfee,
     cartItems, addToCart,
     getCartCount,updateQuantity,
-    getCartAmount,navigate
+    getCartAmount,navigate,
+    setToken,token,backendUrl
 }
     
 
