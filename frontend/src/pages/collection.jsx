@@ -9,7 +9,7 @@ const Collection = () => {
 
   useEffect(() => {
     setLatestProducts(products.slice(0, 2));
-  }, []); 
+  }, [products]); 
 
   return (
     <div className='flex-1'>
