@@ -12,7 +12,7 @@ const ShopContextProvider = (props) => {
     const [cartItems,setCartItems] = useState({});
     const navigate = useNavigate();
     const [token,setToken] = useState('');
-    const backendUrl = "http://localhost:4000"; 
+    const backendUrl = "dsa-finals-backend.vercel.app"; 
 
     const addToCart = async (itemId, shades) => {
     if (!shades) {
