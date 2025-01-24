@@ -9,7 +9,6 @@ const ShopContextProvider = (props) => {
 
     const currency = "₱";
     const deliveryfee = 50;
-    const backendUrl = import.meta.env.VITE_BACKEND_URL
     const [cartItems,setCartItems] = useState({});
     const navigate = useNavigate();
 
@@ -75,7 +74,7 @@ const value = {
     products, currency, deliveryfee,
     cartItems, addToCart,
     getCartCount,updateQuantity,
-    getCartAmount,navigate,backendUrl
+    getCartAmount,navigate
 }
     
 
